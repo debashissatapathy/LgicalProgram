@@ -24,21 +24,6 @@ public class StopWatch
         // Write result.
         Console.WriteLine("Time elapsed: {0}", stopwatch.Elapsed);
 
-        Stopwatch stop = Stopwatch.StartNew();
-        Thread.Sleep(1000);
-        stop.Restart();
-        Thread.Sleep(1000);
-        Console.WriteLine(stop.ElapsedMilliseconds);
-
-        stop = Stopwatch.StartNew();
-
-        // Capture the elapsed ticks and write them to the console.
-        long ticks1 = stopwatch.ElapsedTicks;
-        Console.WriteLine(ticks1);
-
-        // Capture the ticks again.
-        // ... This will be a larger value.
-        long ticks2 = stopwatch.ElapsedTicks;
-        Console.WriteLine(ticks2);
+        
     }
 }
